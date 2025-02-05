@@ -1,0 +1,140 @@
+
+/* General Reset for Cross-Browser Compatibility */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: url("To-do-list.jpg") no-repeat center center fixed; /* Set background image */
+  background-size: cover; /* Make the image cover the viewport */
+  color: #ffffff; /* White text for visibility */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.container {
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  padding: 20px;
+  border-radius: 15px; /* Softer rounded corners */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for better depth */
+  width: 350px; /* Fixed width for consistency */
+  max-width: 90%; /* Ensure responsive design on smaller screens */
+  text-align: center;
+}
+
+/* Header Styling */
+h1 {
+  color: #444444; /* Darker text for better contrast */
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Add spacing for a cleaner look */
+}
+
+/* Input Styling */
+input {
+  width: 100%; /* Full width for inputs */
+  max-width: 320px; /* Add maximum width for better alignment on larger screens */
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none; /* Remove default focus outline */
+}
+
+input:focus {
+  border-color: #28a745; /* Green border when focused */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Button Styling */
+button {
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Press effect */
+}
+
+/* Task List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: #f4f4f4; /* Light gray background for tasks */
+  color: #333333; /* Dark text for tasks */
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for each task */
+}
+
+/* Delete Button Styling */
+li button {
+  background-color: #dc3545; /* Red delete button */
+  border: none;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+li button:active {
+  transform: scale(0.95); /* Press effect */
+}
+
+/* Media Query for Smaller Devices */
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Ensure container is responsive on smaller devices */
+    padding: 15px;
+  }
+
+  input {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    padding: 10px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  li {
+    font-size: 0.9rem; /* Adjust task font size */
+  }
+}

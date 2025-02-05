@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Scheduler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task Scheduler</h1>
+    <p id="currentDateTime"></p> <!-- Show current date and time -->
+    
+    <!-- Task Input Form -->
+    <input type="text" id="taskInput" placeholder="Enter a task" />
+    <label for="taskDate">Task Date:</label>
+    <input type="date" id="taskDate" title="Select task date" />
+    <input type="time" id="taskTime" title="Select task time" placeholder="HH:MM" />
+    <button id="addTaskButton">Add Task</button>
+    
+    <h2>Scheduled Tasks</h2>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
